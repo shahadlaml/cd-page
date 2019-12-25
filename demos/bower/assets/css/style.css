@@ -148,12 +148,11 @@ Helper classes
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-
-
 }
 
-
+.icon-facebook:before {
+  content: "\e600";
+}
 
 .icon-twitter:before {
   content: "\e601";
@@ -168,33 +167,27 @@ html, body {
   min-width: 320px;
   line-height: 1em;
   font-size: 1.2em;
-  color: black;
-  background: white;
+  color: white;
+  background: #00acdd;
   overflow: hidden;
-  background: linear-gradient(90deg, rgba(30,115,139,1) 0%, rgba(6,37,53,1) 100%);;
-  background: -webkit-radial-gradientlinear-gradient(90deg, rgba(30,115,139,1) 0%, rgba(6,37,53,1) 100%);;
-  background: -moz-radial-gradientlinear-gradient(90deg, rgba(30,115,139,1) 0%, rgba(6,37,53,1) 100%);;
-  background: -o-radial-gradientlinear-gradient(90deg, rgba(30,115,139,1) 0%, rgba(6,37,53,1) 100%);;
-  background: radial-gradientlinear-gradient(90deg, rgba(30,115,139,1) 0%, rgba(6,37,53,1) 100%);;
+  background: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 100, color-stop(0%, #00acdd), color-stop(100%, #003544));
+  background: -webkit-radial-gradient(top left, #00acdd 0%, #003544 100%);
+  background: -moz-radial-gradient(top left, #00acdd 0%, #003544 100%);
+  background: -o-radial-gradient(top left, #00acdd 0%, #003544 100%);
+  background: radial-gradient(top left, #00acdd 0%, #003544 100%);
 }
 @media only screen and (max-width: 320px) {
   html, body {
     font-size: 0.96em;
   }
-p{
-  color:red;
-}
-  .email{
-    font-size: 1;
-  }
 }
 
 a {
-  color: #F3941F;
+  color: white;
   text-decoration: none;
 }
 a:hover, a:active, a:focus {
-  color: #F3941F;
+  color: #ffcc2f;
 }
 
 .main {
@@ -204,7 +197,7 @@ a:hover, a:active, a:focus {
   z-index: 1;
 }
 .main .inner-content {
-  width: 70%;
+  width: 40%;
   max-width: 400px;
   padding: 7% 10%;
   text-align: center;
@@ -230,39 +223,4 @@ a:hover, a:active, a:focus {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-  @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
-p{
-    font-family: 'Cairo', sans-serif;
-    color:#fff;
-}
-@keyframes changewidth {
-  from {
-    padding-bottom: 5%;
-  }
-
-  to {
-    padding-top: 5%;
-  }
-}
-
-header {
-  animation-duration: 0.5s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transition-timing-function: ease-in-out;
-}
-
-
-
-
-
-.email{
-    font-size: 0.6em;
-  letter-spacing: 2px;
-  text-align: center;
-  margin: auto;
-
 }
